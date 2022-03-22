@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(159, 230, 248);
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    background-color: rgb(93, 130, 211);
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ nav{
+    display: flex;
+    gap: 30px;    
+}
+
+a{
+    color: rgb(247, 247, 247);
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+a:hover{
+    color: rgb(189, 189, 189);
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 90%;
+    width: 95%;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 30%;
+    height: 90%;
+    border-radius: 20px;  
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+}
+
+div > p {
+    padding: 20px;
+    font-size: 1.4em;
+    line-height: 1.7em;
+    height: 80%;
+}
+
+input{
+    background-color: rgb(152, 90, 211);
+    font-family: monospace;
+    font-size: 1.5em;
+    color: #fff;
+    width: 100%;
+    padding: 30px;
+    display: block; 
+    border: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-transform: uppercase;
+}
+
+input:hover{
+    color: rgb(184, 184, 184);
+}
+
+.conteiner > p{
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    text-align: justify;
+}
+
+footer{
+    align-self: flex-end;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+
+footer > p {
+    font-family: monospace;
+    font-size: 1.5em;
+    padding: 30px;
+    margin: auto;
+}
+
+span{
+    font-style: italic;
+
+
+@media (max-width: 900px){
+    
+    .img{
+        display: none;
+    }
+   
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        text-align:center;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100vw;
+        background-color: rgb(159, 230, 248);
+        margin: 0px;        
+    }
+
+    main{
+        display: inline-block;
+        width: 90%;
+    }
+
+    .conteiner{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        margin: auto;  
+    }
+
+    .div1 ,.div2 , .div3 {
+        width: 90%;
+        margin: 30px auto; 
+    }
+
+    div > p , input{
+        font-size: 1.3em;
+    }
+    input{
+        padding: 20px;
+    }
+    
+    footer{
+       
+        width: 100%;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media (min-width: 900px) and (max-width:1700px){
+    main{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .conteiner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        height: 90%;
+        width: 95%;
+    }
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 31.5%;
+        height: 90%;
+        border-radius: 20px;  
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    }
+
+    div > p{
+        font-size: 1.3em;
+        margin-bottom: 0px ;
+        padding: 15px;
+        height: 78%;
+    }
+
+    input{
+        padding: 20px;
+    }
+}
