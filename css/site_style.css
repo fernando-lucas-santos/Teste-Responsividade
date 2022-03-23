@@ -157,7 +157,7 @@ span{
     }
 
     div > p , input{
-        font-size: 1.3em;
+        font-size: 2vh;
     }
     input{
         padding: 20px;
@@ -204,7 +204,7 @@ span{
     }
 
     div > p{
-        font-size: 1.3em;
+        font-size: 2vh;
         margin-bottom: 0px ;
         padding: 15px;
         height: 78%;
